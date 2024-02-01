@@ -1,7 +1,15 @@
-export default function Home (){
+import Head from "next/head";
+
+export default function Home() {
     return (
-        <>
-            <h1>Lamborghini</h1>
-        </>
-    )
-}
+      <>
+      <Head>
+        <title>Lamborghini</title>
+        <meta name="keywords" content="Lamborghini, cars" />
+      </Head>
+        <section>
+          <h2>Lamborghini</h2>
+        </section>
+      </>
+    );
+  }
