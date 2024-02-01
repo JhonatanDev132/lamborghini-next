@@ -12,5 +12,17 @@ export default function Menu(){
 }
 
 const StyledMenu = styled.nav`
-    color: black;
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 0 6px 0 6px;
+        font-family: var(--fonte-nav);
+        font-weight: 200;
+    }
+
 `;
