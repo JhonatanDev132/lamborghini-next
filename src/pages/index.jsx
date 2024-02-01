@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styled from "styled-components";
 
 export default function Home() {
     return (
@@ -13,3 +14,7 @@ export default function Home() {
       </>
     );
   }
+
+const StyledSection = styled.section`
+  background-image: url("/image/revuelto.jpeg");
+`;
