@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+:root {
+    --cor-fundo: #181818;
+    --fonte-nav: "inter";
+}
+
 body {
     padding: 0;
     margin: 0;

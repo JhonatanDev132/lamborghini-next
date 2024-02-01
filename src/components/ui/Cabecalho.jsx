@@ -8,8 +8,8 @@ export default function Cabecalho() {
         <StyledHeader>
         <h1>
             <Link href="/">
-            
-            <Image 
+
+            <Image
             src="/image/lamborghini.svg"
             width={40}
             height={40}
@@ -25,7 +25,7 @@ export default function Cabecalho() {
 
 const StyledHeader = styled.header`
 
-background-color: #181818;
+background-color: var(--cor-fundo);
 height: 60px;
 box-sizing: border-box;
 padding: 8px 20px;
@@ -36,7 +36,7 @@ h1 {
     margin: 0;
 }
 
-img { 
+img {
     color: transparent;
     height: fit-content;
     height: 45px;
@@ -53,6 +53,7 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 6px 0 6px;
-    
+    font-family: var(--fonte-nav);
+    font-weight: 200;
 }
 `;
