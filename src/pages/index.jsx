@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import NewsList from "@/components/NewsList";
 
 
 export default function Home() {
@@ -26,6 +27,8 @@ export default function Home() {
           <h3>News</h3>
 
           <h2>Lamborghini <br /> World</h2>
+
+          <NewsList />
         </StyledNews>
       </>
     );
