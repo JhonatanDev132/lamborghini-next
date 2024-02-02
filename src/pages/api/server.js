@@ -1,7 +1,7 @@
 // server.js
 
 const porta = 5000;
-const endereco = "192.168.1.5";
+const endereco = "10.20.46.31";
 
 const serverApi = `http://${endereco}:${porta}`;
 

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import Link from "next/link";
 
 
 
@@ -12,21 +13,21 @@ export default function Home() {
       </Head>
 
         <StyledSection>
-          <h2>Direzione <br /> cor tauri</h2>
+          <h1>Direzione <br /> cor tauri</h1>
         </StyledSection>
         <StyledModels>
-          <h3>Models</h3>
+          <h2>Models</h2>
 
           <div>
           <p>See our models</p>
 
-          <button>Models</button>
+          <Link href="/models">Models</Link>
           </div>
         </StyledModels>
         <StyledNews>
-          <h3>News</h3>
+          <h2>News</h2>
 
-          <h2>Lamborghini <br /> World</h2>
+          <h3>Lamborghini World</h3>
 
         </StyledNews>
       </>
@@ -35,7 +36,8 @@ export default function Home() {
 
 const StyledSection = styled.section`
 
-      background-image: url("/image/revuelto.jpeg") ;
+  @media screen and (max-width: 425px) {
+    background-image: url("/image/revuelto.jpeg") ;
       background-repeat: no-repeat;
       height: 500px;
       min-height: 95vh;
@@ -43,7 +45,7 @@ const StyledSection = styled.section`
       background-position: center;
 
 
-    h2 {
+    h1 {
         color: white;
         font-family: var(--fonte-nav);
         font-weight: 700;
@@ -59,9 +61,38 @@ const StyledSection = styled.section`
         text-transform: uppercase;
 
     }
+  }
+
+  @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, #27262652, transparent),url("/image/revuelto.jpeg") ;
+      background-repeat: no-repeat;
+      height: 500px;
+      min-height: 95vh;
+      background-size: cover;
+      background-position: center;
+
+      h1 {
+        color: white;
+        font-family: var(--fonte-nav);
+        font-weight: 700;
+        font-size: 6rem;
+        line-height: 6rem;
+        letter-spacing: 0.1rem;
+
+
+        padding-top: 29rem;
+        text-align: left;
+        margin-left: 10rem;
+        text-transform: uppercase;
+  }
+     
+
+  }
 `;
 
 const StyledModels = styled.section`
+
+@media screen and (max-width: 425px) {
 
 background-image: url("/image/museum.webp");
 background-repeat: no-repeat;
@@ -75,7 +106,7 @@ justify-content: space-around;
 flex-direction: column;
 padding-left: 2rem;
 
-h3 {
+h2 {
 font-size: 1.6rem;
 font-family: var(--fonte-nav);
 font-weight: 600;
@@ -107,7 +138,7 @@ p {
 
 }
 
-button {
+a {
   /* margin-left: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem; */
@@ -117,8 +148,11 @@ button {
   border: none;
   border-radius: 2px;
 
+  text-align: center;
+
   font-size: 24px;
   color: white;
+  text-decoration: none;
 
   width: 6rem;
 
@@ -129,11 +163,87 @@ div {
   display: flex;
   flex-direction: column;
 }
+}
+
+@media screen and (min-width: 768px) {
+background-image: linear-gradient(to right, #2525258c, transparent), url("/image/museum.webp");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 700px;
+min-height: 50vh;
+
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+padding-left: 2rem;
+
+h2 {
+font-size: 1.6rem;
+font-family: var(--fonte-nav);
+font-weight: 600;
+
+
+
+letter-spacing: 0.1rem;
+text-transform: uppercase;
+
+color: White;
+
+
+margin-left: 5rem;
+}
+
+p {
+  /* padding-left: 1rem; */
+  /* padding-top: 10rem; */
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-family: var(--fonte-nav);
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: white;
+
+
+
+}
+
+a {
+  /* margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; */
+
+  padding: 10px;
+
+  border: none;
+  border-radius: 2px;
+
+  font-size: 24px;
+  font-family: var(--fonte-nav);
+  
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+
+  width: 8rem;
+
+  background-color: #fff;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+}
+}
 `;
 
 const StyledNews = styled.section`
-
-h3 {
+@media screen and (max-width: 425px) {
+h2 {
   font-size: 1.6rem;
   font-family: var(--fonte-nav);
   font-weight: 600;
@@ -151,7 +261,7 @@ h3 {
   margin-left: 1rem;
 }
 
-h2 {
+h3 {
   font-size: 2.6rem;
   font-family: var(--fonte-nav);
   font-weight: 600;
@@ -160,5 +270,39 @@ h2 {
   margin-left: 1rem;
 
   padding-top: 1rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+h2 {
+  font-size: 1.6rem;
+  font-family: var(--fonte-nav);
+  font-weight: 700;
+
+
+
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  
+  color: black;
+
+
+  padding-top: 1.5rem;
+  margin-left: 20rem;
+}
+
+h3 {
+  font-size: 7rem;
+  font-family: var(--fonte-texto);
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+
+  margin-left: 20rem;
+
+  padding-top: 1rem;
+}
 }
 `;

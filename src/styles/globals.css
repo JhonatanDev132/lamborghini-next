@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 :root {
     --cor-fundo: #181818;
     --fonte-nav: "inter";
     --fonte-titulo: "verdana";
+    --fonte-texto: "roboto"
 }
 
 body, h1, h2, h3, p {

@@ -1,0 +1,48 @@
+{
+    "news" :{
+
+        "-NpeDOBYNsZCzsZx3oO2": {
+          "id": 1,
+          "title": "Título da Notícia 1",
+          "subtitle": "Subtítulo da Notícia 1",
+          "category": "Tecnologia",
+          "date": "2024-02-01"
+        },
+        "-NpeDOBYl8cnn0pQpp_z": {
+          "id": 2,
+          "title": "Título da Notícia 2",
+          "subtitle": "Subtítulo da Notícia 2",
+          "category": "Esportes",
+          "date": "2024-02-02"
+        }
+      
+},
+
+
+    "cars":{
+        "-NpeClIw4RFtthpFj-ia": {
+          "id": 1,
+          "modelo": "Lamborghini Revuelto",
+          "max_speed": "350 km/h",
+          "acceleration": "0-100 km/h in 2.8 seconds",
+          "categoria": "Esportivo",
+          "horse_power": "700 HP"
+        },
+        "-NpeClIw6f_i1VysNljS": {
+          "id": 2,
+          "modelo": "Lamborghini Urus",
+          "max_speed": "305 km/h",
+          "acceleration": "0-100 km/h in 3.6 seconds",
+          "categoria": "SUV",
+          "horse_power": "641 HP"
+        },
+        "-NpeClIw9oPRmOy32Z0F": {
+          "id": 3,
+          "modelo": "Lamborghini Huracán",
+          "max_speed": "325 km/h",
+          "acceleration": "0-100 km/h in 2.9 seconds",
+          "categoria": "Esportivo",
+          "horse_power": "631 HP"
+        }
+      }
+}
