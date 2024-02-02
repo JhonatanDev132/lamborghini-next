@@ -36,7 +36,34 @@ export default function Home() {
 
 const StyledSection = styled.section`
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
+    background-image: url("/image/revuelto.jpeg") ;
+      background-repeat: no-repeat;
+      height: 500px;
+      min-height: 95vh;
+      background-size: cover;
+      background-position: center;
+
+
+    h1 {
+        color: white;
+        font-family: var(--fonte-nav);
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: -0.1rem;
+
+
+        position: relative;
+        top: 12rem;
+        text-align: left;
+        padding-left: 1.5rem;
+        text-transform: uppercase;
+
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     background-image: url("/image/revuelto.jpeg") ;
       background-repeat: no-repeat;
       height: 500px;
@@ -85,14 +112,87 @@ const StyledSection = styled.section`
         margin-left: 10rem;
         text-transform: uppercase;
   }
-     
+
 
   }
 `;
 
 const StyledModels = styled.section`
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
+
+background-image: url("/image/museum.webp");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 600px;
+min-height: 50vh;
+
+display: flex;
+justify-content: space-around;
+flex-direction: column;
+padding-left: 2rem;
+
+h2 {
+font-size: 1.6rem;
+font-family: var(--fonte-nav);
+font-weight: 600;
+
+
+
+letter-spacing: 0.1rem;
+text-transform: uppercase;
+
+color: black;
+
+
+padding-top: 1.5rem;
+padding-left: 1rem;
+}
+
+p {
+  /* padding-left: 1rem; */
+  /* padding-top: 10rem; */
+  margin-bottom: 1rem;
+  font-size: 18px;
+  font-family: var(--fonte-nav);
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: black;
+
+
+
+}
+
+a {
+  /* margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem; */
+
+  padding: 10px;
+
+  border: none;
+  border-radius: 2px;
+
+  text-align: center;
+
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+
+  width: 6rem;
+
+  background-color: #000;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+}
+
+@media screen and (max-width: 768px) {
 
 background-image: url("/image/museum.webp");
 background-repeat: no-repeat;
@@ -221,7 +321,7 @@ a {
 
   font-size: 24px;
   font-family: var(--fonte-nav);
-  
+
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
@@ -273,6 +373,38 @@ h3 {
 }
 }
 
+@media screen and (max-width: 768px) {
+h2 {
+  font-size: 1.6rem;
+  font-family: var(--fonte-nav);
+  font-weight: 600;
+
+
+
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  color: black;
+
+
+  padding-top: 1.5rem;
+
+  margin-left: 1rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+  font-family: var(--fonte-nav);
+  font-weight: 600;
+
+
+  margin-left: 1rem;
+
+  padding-top: 1rem;
+  text-transform: uppercase;
+}
+}
+
 @media screen and (min-width: 768px) {
 h2 {
   font-size: 1.6rem;
@@ -284,7 +416,7 @@ h2 {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
 
-  
+
   color: black;
 
 
@@ -293,14 +425,16 @@ h2 {
 }
 
 h3 {
-  font-size: 7rem;
+  font-size: 5rem;
   font-family: var(--fonte-texto);
   font-weight: 600;
+
+
 
   text-transform: uppercase;
 
 
-  margin-left: 20rem;
+  margin-left: 10rem;
 
   padding-top: 1rem;
 }

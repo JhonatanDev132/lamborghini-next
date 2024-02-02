@@ -13,7 +13,7 @@ export default function Menu(){
         setHoveredLink(null);
     };
 
-    
+
     return (
     <StyledMenu>
         <NavItem>
@@ -33,12 +33,12 @@ export default function Menu(){
 }
 
 const StyledMenu = styled.nav`
-@media screen and (max-width: 425px) {
-    
+@media screen and (max-width: 426px) {
+
     display: flex;
     align-items: center;
     margin-left: auto;
-    
+
     a {
         text-decoration: none;
         color: white;
@@ -49,12 +49,28 @@ const StyledMenu = styled.nav`
     }
 }
 
+@media screen and (max-width: 768px) {
+
+display: flex;
+align-items: center;
+margin-left: auto;
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0 6px 0 6px;
+    font-family: var(--fonte-nav);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+}
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        
+
         margin-left: 3rem;
-    
+
     a {
         text-decoration: none;
         color: white;

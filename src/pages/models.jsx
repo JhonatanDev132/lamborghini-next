@@ -14,18 +14,26 @@ export default function Models() {
           <h2>Models</h2>
         </StyledSection>
         <StyledRevuelto>
+
+          <div className="imagem">
+
           <Image
           src="/image/olha-ela-denovo.webp"
-          width={360}
-          height={300}
+          width={310}
+          height={310}
           alt="Lamborghini Revuelto Linda"
           />
-          <Image 
+
+          </div>
+
+          <Image
           src="/image/revuelto.webp"
-          width={360}
+          width={320}
           height={30}
           alt="Logo da Revuelto"
           />
+
+
 
           <p>
           The Revuelto is the beginning of a new era for Lamborghini, who has harnessed the power of hybridization technology to create the first HPEV (High Performance Electrified Vehicle). Responding to the need for sustainability and powerful performance, the Lamborghini Revuelto rewrites all paradigms and represents a technical masterpiece beyond anyone’s imagination. The iconic V12 engine finds a new life in this futuristic automotive masterwork that delivers unparalleled performance and driving emotions.
@@ -36,19 +44,28 @@ export default function Models() {
 
           <hr />
 
-          <Image 
+          <div className="imagem">
+
+          <Image
           src="/image/huracan.webp"
-          width={360}
-          height={300}
-          alt="Huracan linda a mais bela de todas" 
+          width={310}
+          height={310}
+          alt="Huracan linda a mais bela de todas"
           />
-          <Image 
+
+          </div>
+
+
+          <Image
           src="/image/huracán_logo.webp"
-          width={360}
+          width={320}
           height={20}
           alt="Logo da Huracán"
           />
-          
+
+
+
+
           <p>
             From our past, we've learned perfection. This is how the first model of the Lamborghini Huracán was born. More performance, more control, more innovation. The Huracán is equipped with a powerful V10 engine and the latest technologies to perform at its absolute best. Engineered to guarantee the best performance and control under any driving condition, it's easy to take to the limit, not to mention extremely fun, thanks to technology like the Lamborghini Doppia Frizione (LDF) dual clutch gearbox and the electronically-controlled four-wheel drive. Enjoy the best driving experience, ever. Discover all the Lamborghini Huracán models
           </p>
@@ -57,19 +74,25 @@ export default function Models() {
 
           <hr />
 
-          <Image 
-          src="/image/urus.webp"
-          width={360}
-          height={300}
-          alt="Melhor SUV do mundo" 
-          /> 
+          <div className="imagem">
 
-          <Image 
+          <Image
+          src="/image/urus.webp"
+          width={310}
+          height={310}
+          alt="Melhor SUV do mundo"
+          />
+
+          </div>
+
+          <div className="urus">
+          <Image
           src="/image/urus-logo.webp"
           width={200}
           height={30}
           alt="Logo da Urus"
           />
+          </div>
 
           <p>
           Lamborghini Urus is the world’s first Super Sport Utility Vehicle, in which luxury, sportiness and performance meet comfort and versatility. It offers best-in-class driving dynamics, alongside its unmistakable elegance of design. Urus embodies the characteristics of multiple souls: sporty, elegant and off-road, and has a suitability for everyday driving in a range of environments. With its surprisingly distinct engine sound, combined with high performance, Lamborghini Urus is anything but typical.
@@ -95,7 +118,7 @@ h2 {
 }
 
 @media screen and (max-width: 425px) {
-  
+
   background-image: url("/image/gate_models_hero_01_m.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -122,12 +145,16 @@ const StyledRevuelto = styled.section`
 padding-left: 2rem;
 padding-right: 2rem;
 
-    img {
+    .imagem{
       text-align: center;
+    }
+
+    img {
+
       padding-top: 2rem;
     }
-    
-    
+
+
     p {
       font-family: var(--fonte-texto);
       font-weight: 300;
@@ -140,9 +167,11 @@ const StyledHuracan = styled.section`
   padding-left: 2rem;
   padding-right: 2rem;
 
+  .imagem{
+      text-align: center;
+    }
 
     img {
-      text-align: center;
       padding-top: 2rem;
     }
 
@@ -158,9 +187,15 @@ const StyledUrus = styled.section`
   padding-left: 2rem;
   padding-right: 2rem;
 
+  .imagem{
+      text-align: center;
+    }
+
+  .urus {
+    margin-left: 2rem;
+  }
 
     img {
-      text-align: center;
       padding-top: 2rem;
     }
 

@@ -15,12 +15,15 @@ export default function HeadOffice() {
           <h2>Museum</h2>
         </StyledSection>
         <StyledNews_1>
-          <Image 
+          <div className="imagem">
+          <Image
           src="/image/museum_s_01_m.webp"
-          width={392}
+          width={340}
           height={300}
-          alt="Melhor SUV do mundo" 
+          alt="Melhor SUV do mundo"
           />
+
+          </div>
 
           <h2>Automobili Lamborghini Museum</h2>
 
@@ -50,7 +53,7 @@ h1 {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 0.01rem;
-} 
+}
 
 h2 {
   color: white;
@@ -58,7 +61,7 @@ h2 {
   text-transform: uppercase;
 }
 
-  @media screen and (max-width: 425px) {
+  @media screen and (max-width: 426px) {
     background-image: linear-gradient(to right, #262626, transparent), url("/image/museum-mobile.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -85,8 +88,11 @@ const StyledNews_1=styled.section`
   padding-left: 1rem;
   padding-right: 1rem;
 
-    img {
+    .imagem{
       text-align: center;
+    }
+
+    img {
       padding-top: 2rem;
     }
 
@@ -104,7 +110,7 @@ const StyledNews_1=styled.section`
       font-family: var(--fonte-texto);
       font-weight: 300;
       margin-top: 2rem;
-      
+
       line-height: 1.7rem;
-    } 
+    }
 `;
