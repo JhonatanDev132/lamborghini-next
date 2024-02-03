@@ -40,7 +40,7 @@ const StyledSection = styled.section`
     background-image: url("/image/revuelto.jpeg") ;
       background-repeat: no-repeat;
       height: 500px;
-      min-height: 95vh;
+      min-height: 100vh;
       background-size: cover;
       background-position: center;
 
@@ -67,7 +67,7 @@ const StyledSection = styled.section`
     background-image: url("/image/revuelto.jpeg") ;
       background-repeat: no-repeat;
       height: 500px;
-      min-height: 95vh;
+      min-height: 100vh;
       background-size: cover;
       background-position: center;
 
@@ -94,7 +94,7 @@ const StyledSection = styled.section`
       background-image: linear-gradient(to right, #27262652, transparent),url("/image/revuelto.jpeg") ;
       background-repeat: no-repeat;
       height: 500px;
-      min-height: 95vh;
+      min-height: 100vh;
       background-size: cover;
       background-position: center;
 

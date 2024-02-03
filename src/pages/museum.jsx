@@ -15,6 +15,8 @@ export default function HeadOffice() {
           <h2>Museum</h2>
         </StyledSection>
         <StyledNews_1>
+
+          <div className="flex">
           <div className="imagem">
           <Image
           src="/image/museum_s_01_m.webp"
@@ -24,6 +26,7 @@ export default function HeadOffice() {
           />
 
           </div>
+          <div className="texto">
 
           <h2>Automobili Lamborghini Museum</h2>
 
@@ -41,6 +44,8 @@ export default function HeadOffice() {
             From October 1 to April 30, from 9:30 a.m. to 6 p.m. (last entrance at 5 p.m.)
             From May 2 to September 30, from 9:30 a.m. to 7 p.m. (last entrance at 6 p.m.)
           </p>
+          </div>
+          </div>
         </StyledNews_1>
       </>
     );
@@ -82,6 +87,28 @@ h2 {
       letter-spacing: -0.1rem;
     }
   }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to right, #262626, transparent), url("/image/museo_23_hero_02.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    min-height: 100vh;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      padding-top: 20rem;
+      margin-left: 9rem;
+      letter-spacing: 0.1rem;
+    }
+
+    h2 {
+      font-size: 6rem;
+      margin-left: 9rem;
+      letter-spacing: -0.1rem;
+    }
+  }
 `;
 
 const StyledNews_1=styled.section`
@@ -89,7 +116,22 @@ const StyledNews_1=styled.section`
   padding-right: 1rem;
 
     .imagem{
-      text-align: center;
+
+      padding-top: 5rem;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-bottom: 5rem;
+    }
+
+    .texto {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5rem;
+      padding-top: 5rem;
+      padding-right: 2rem;
     }
 
     img {

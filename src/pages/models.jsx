@@ -15,6 +15,8 @@ export default function Models() {
         </StyledSection>
         <StyledRevuelto>
 
+
+        <div className="flex">
           <div className="imagem">
 
           <Image
@@ -25,7 +27,7 @@ export default function Models() {
           />
 
           </div>
-
+          <div className="lado">
           <Image
           src="/image/revuelto.webp"
           width={320}
@@ -38,24 +40,28 @@ export default function Models() {
           <p>
           The Revuelto is the beginning of a new era for Lamborghini, who has harnessed the power of hybridization technology to create the first HPEV (High Performance Electrified Vehicle). Responding to the need for sustainability and powerful performance, the Lamborghini Revuelto rewrites all paradigms and represents a technical masterpiece beyond anyone’s imagination. The iconic V12 engine finds a new life in this futuristic automotive masterwork that delivers unparalleled performance and driving emotions.
           </p>
+          </div>
+        </div>
         </StyledRevuelto>
 
         <StyledHuracan>
 
-          <hr />
+
+
+        <div className="flex">
 
           <div className="imagem">
 
           <Image
           src="/image/huracan.webp"
-          width={310}
-          height={310}
+          width={340}
+          height={320}
           alt="Huracan linda a mais bela de todas"
           />
 
           </div>
 
-
+          <div className="lado">
           <Image
           src="/image/huracán_logo.webp"
           width={320}
@@ -69,11 +75,14 @@ export default function Models() {
           <p>
             From our past, we've learned perfection. This is how the first model of the Lamborghini Huracán was born. More performance, more control, more innovation. The Huracán is equipped with a powerful V10 engine and the latest technologies to perform at its absolute best. Engineered to guarantee the best performance and control under any driving condition, it's easy to take to the limit, not to mention extremely fun, thanks to technology like the Lamborghini Doppia Frizione (LDF) dual clutch gearbox and the electronically-controlled four-wheel drive. Enjoy the best driving experience, ever. Discover all the Lamborghini Huracán models
           </p>
+          </div>
+
+        </div>
         </StyledHuracan>
         <StyledUrus>
 
-          <hr />
 
+        <div className="flex">
           <div className="imagem">
 
           <Image
@@ -84,7 +93,7 @@ export default function Models() {
           />
 
           </div>
-
+          <div className="lado">
           <div className="urus">
           <Image
           src="/image/urus-logo.webp"
@@ -97,6 +106,8 @@ export default function Models() {
           <p>
           Lamborghini Urus is the world’s first Super Sport Utility Vehicle, in which luxury, sportiness and performance meet comfort and versatility. It offers best-in-class driving dynamics, alongside its unmistakable elegance of design. Urus embodies the characteristics of multiple souls: sporty, elegant and off-road, and has a suitability for everyday driving in a range of environments. With its surprisingly distinct engine sound, combined with high performance, Lamborghini Urus is anything but typical.
           </p>
+          </div>
+        </div>
         </StyledUrus>
       </>
     );
@@ -139,7 +150,67 @@ h2 {
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+background-image: url("/image/gate_models_hero_01_m.webp");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 100% 50%;
+height: 500px;
+min-height: 100vh;
+
+h1 {
+  font-size: 18px;
+  padding-top: 10rem;
+  margin-left: 5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 35px;
+  margin-left: 5rem;
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+background-image: url("/image/gate_models_hero_01_big.webp");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: 10% 50%;
+height: 500px;
+min-height: 100vh;
+
+
+h1 {
+  font-size: 18px;
+  padding-top: 10rem;
+  margin-left: 5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 35px;
+  margin-left: 5rem;
+  padding-top: 0.5rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+
+}
+
 `;
+
 
 const StyledRevuelto = styled.section`
 padding-left: 2rem;
@@ -148,6 +219,8 @@ padding-right: 2rem;
     .imagem{
       text-align: center;
     }
+
+
 
     img {
 
@@ -160,6 +233,56 @@ padding-right: 2rem;
       font-weight: 300;
       margin-top: 2rem;
       padding-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+    .imagem{
+      text-align: center;
+    }
+
+    img {
+      padding-top: 2rem;
+    }
+
+
+    p {
+      font-family: var(--fonte-texto);
+      font-weight: 300;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+
+    .flex {
+      display: flex;
+    }
+
+    .lado {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5rem;
+      padding-top: 5rem;
+    }
+
+    img {
+      padding-top: 2rem;
+    }
+
+
+    p {
+      font-family: var(--fonte-texto);
+      font-weight: 300;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
     }
 `;
 
@@ -180,6 +303,58 @@ const StyledHuracan = styled.section`
       font-weight: 300;
       margin-top: 2rem;
       padding-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+    .imagem{
+      text-align: center;
+    }
+
+    img {
+      padding-top: 2rem;
+    }
+
+
+    p {
+      font-family: var(--fonte-texto);
+      font-weight: 300;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+
+    .flex {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .lado {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5rem;
+      padding-top: 5rem;
+    }
+
+    img {
+      padding-top: 2rem;
+    }
+
+
+    p {
+      font-family: var(--fonte-texto);
+      font-weight: 300;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
     }
 `;
 
@@ -204,5 +379,60 @@ const StyledUrus = styled.section`
       font-weight: 300;
       margin-top: 2rem;
       padding-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+    .imagem{
+      text-align: center;
+    }
+
+    img {
+      padding-top: 2rem;
+    }
+
+
+    p {
+      font-family: var(--fonte-texto);
+      font-weight: 300;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+
+    .flex {
+      display: flex;
+      padding-bottom: 3rem;
+    }
+
+    .urus {
+      margin-left: 0;
+    }
+
+    .lado {
+      display: flex;
+      flex-direction: column;
+      padding-left: 5rem;
+      padding-top: 5rem;
+    }
+
+    img {
+      padding-top: 2rem;
+    }
+
+
+    p {
+      font-family: var(--fonte-texto);
+      font-weight: 300;
+      margin-top: 2rem;
+      padding-bottom: 1rem;
+    }
     }
 `;
