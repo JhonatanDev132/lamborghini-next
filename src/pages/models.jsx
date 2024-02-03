@@ -19,8 +19,8 @@ export default function Models() {
 
           <Image
           src="/image/olha-ela-denovo.webp"
-          width={310}
-          height={310}
+          width={340}
+          height={320}
           alt="Lamborghini Revuelto Linda"
           />
 
