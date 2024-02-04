@@ -1,10 +1,10 @@
 {
-    "short_name": "Petshop",
-    "name": "Petshop pica das galaxías seu cachorro vai adorar",
-    "description": "Exemplo de um PWA criada com next.js",
+    "short_name": "Lamborghini",
+    "name": "Lamborghini 😈",
+    "description": "Site da Lamborghini que fiz em cima do site oficial",
     "icons": [
       {
-        "src": "images/favicon.png",
+        "src": "image/lamborghini.png",
         "type": "image/png",
         "sizes": "256x256"
       }
