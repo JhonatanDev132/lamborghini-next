@@ -1,0 +1,19 @@
+{
+    "short_name": "Petshop",
+    "name": "Petshop pica das galaxías seu cachorro vai adorar",
+    "description": "Exemplo de um PWA criada com next.js",
+    "icons": [
+      {
+        "src": "images/favicon.png",
+        "type": "image/png",
+        "sizes": "256x256"
+      }
+    ],
+    "start_url": "/",
+    "scope": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "orientation": "any",
+    "lang": "pt-br"
+  }

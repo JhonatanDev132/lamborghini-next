@@ -1,8 +1,4 @@
 // server.js
-
-const porta = 5000;
-const endereco = "10.20.46.31";
-
-const serverApi = `http://${endereco}:${porta}`;
+const serverApi = `https://lamborghininext-default-rtdb.firebaseio.com/`;
 
 export default serverApi;
