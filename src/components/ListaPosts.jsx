@@ -33,6 +33,10 @@ export default function ListaPosts({ posts }) {
 }
 
 const StyledListaPosts = styled.div`
+    article:hover {
+      cursor: pointer;
+    }
+
     h4 {
       font-size: 1.8rem;
       padding-top: 1rem;
