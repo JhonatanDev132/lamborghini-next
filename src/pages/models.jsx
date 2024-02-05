@@ -191,7 +191,7 @@ min-height: 100vh;
 
 
 h1 {
-  font-size: 18px;
+  font-size: 2rem;
   padding-top: 10rem;
   margin-left: 5rem;
   font-weight: 500;
@@ -199,11 +199,10 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 4rem;
   margin-left: 5rem;
   padding-top: 0.5rem;
   font-weight: 600;
-  font-size: 2.5rem;
   letter-spacing: -0.1rem;
 }
 
@@ -259,16 +258,18 @@ padding-right: 2rem;
     @media screen and (min-width: 768px) {
       padding-left: 2rem;
       padding-right: 2rem;
+      margin-bottom: 1rem;
 
 
     .flex {
       display: flex;
+      justify-content: space-around;
     }
 
     .lado {
       display: flex;
       flex-direction: column;
-      padding-left: 5rem;
+      padding-left: 2rem;
       padding-top: 5rem;
     }
 
@@ -328,6 +329,7 @@ const StyledHuracan = styled.section`
 
     @media screen and (min-width: 768px) {
 
+      margin-bottom: 1rem;
       padding-left: 2rem;
       padding-right: 2rem;
 
@@ -340,7 +342,7 @@ const StyledHuracan = styled.section`
     .lado {
       display: flex;
       flex-direction: column;
-      padding-left: 5rem;
+      padding-right: 2rem;
       padding-top: 5rem;
     }
 
@@ -419,8 +421,8 @@ const StyledUrus = styled.section`
     .lado {
       display: flex;
       flex-direction: column;
-      padding-left: 5rem;
-      padding-top: 5rem;
+      padding-left: 2rem;
+      padding-top: 4rem;
     }
 
     img {

@@ -13,16 +13,18 @@ export default function ListaPosts({ posts }) {
           <article key={post.id} className={isImageOnLeft ? "left" : "right"}>
             <div className="column">
               <h4>{post.title}</h4>
-              <p>{post.description}</p>
               <p className="categoria">{post.category}</p>
               <p className="data">{post.date}</p>
+              <p>{post.description}</p>
             </div>
+            <div className="imagem-centralizada">
             <Image
               src={post.image}
-              width={500}
+              width={400}
               height={300}
               alt={`image of ${post.image}`}
             />
+            </div>
           </article>
         );
       })}
@@ -31,54 +33,87 @@ export default function ListaPosts({ posts }) {
 }
 
 const StyledListaPosts = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
+    h4 {
+      font-size: 1.8rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-left: 1rem;
+    }
 
-  padding-left: 4rem;
-  padding-right: 6rem;
+    p {
+      font-family: var(--fonte-texto);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-bottom: 2rem;
+    }
 
-  h3 {
-    color: #000;
-    font-weight: 500;
+    .categoria {
+      font-weight: bold;
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .data {
+      font-weight: 300;
+      padding-bottom: 2rem;
+    }
+
+    img {
+      width: 300px;
+      height: 250px;
+      padding-bottom: 3rem;
+    }
+
+    .imagem-centralizada {
+      text-align: center;
+    }
+
+  @media screen and (min-width: 768px) {
+    h4 {
+      font-size: 2.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-left: 2rem;
+    }
+
+    p {
+      margin-left: 2rem;
+      font-size: 1.4rem;
+    }
+
+
+
+    img {
+      padding-right: 2rem;
+      width: 400px;
+      height: 300px;
+    }
+
+
   }
 
-  p {
-    font-weight: 400;
-    color: #2b2b2b;
-  }
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 1.2rem;
+    }
 
-  .column {
+    article {
     display: flex;
-    flex-direction: column;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-bottom: 3rem;
   }
 
-  .categoria {
-    padding-top: 0.2rem;
-    padding-bottom: 0.5rem;
-    font-weight: bold;
+  img {
+    padding: 3rem 0 0 0;
   }
 
-  .data {
-    font-weight: 300;
-  }
-
-  article {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 2rem 0;
-  }
-
-  article.left {
+    article.left {
     flex-direction: row;
+    padding-right: 2rem;
   }
 
-  article.right {
+    article.right {
     flex-direction: row-reverse;
+    padding-left: 2rem;
+  }
   }
 `;

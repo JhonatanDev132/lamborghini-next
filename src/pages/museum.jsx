@@ -98,14 +98,14 @@ h2 {
     h1 {
       font-size: 2rem;
       font-weight: 500;
-      padding-top: 20rem;
-      margin-left: 9rem;
+      padding-top: 15rem;
+      margin-left: 3rem;
       letter-spacing: 0.1rem;
     }
 
     h2 {
       font-size: 6rem;
-      margin-left: 9rem;
+      margin-left: 3rem;
       letter-spacing: -0.1rem;
     }
   }
@@ -116,20 +116,16 @@ const StyledNews_1=styled.section`
   padding-right: 1rem;
 
     .imagem{
-
+      text-align: center;
       padding-top: 5rem;
     }
 
-    .flex {
-      display: flex;
-      flex-direction: row-reverse;
-      padding-bottom: 5rem;
-    }
+
 
     .texto {
       display: flex;
       flex-direction: column;
-      padding-left: 5rem;
+      padding-left: 2rem;
       padding-top: 5rem;
       padding-right: 2rem;
     }
@@ -154,5 +150,20 @@ const StyledNews_1=styled.section`
       margin-top: 2rem;
 
       line-height: 1.7rem;
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+      .imagem {
+      padding-top: 20rem;
+    }
+
+
+      .flex {
+      display: flex;
+      flex-direction: row-reverse;
+      padding-bottom: 5rem;
+    }
     }
 `;
