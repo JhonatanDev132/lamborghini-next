@@ -1,7 +1,7 @@
 import Container from "@/components/ui/Container";
 import Head from "next/head";
 import styled from "styled-components";
-import serverApi from "../api/server";
+import serverApi from "@/api/server";
 
 
 
@@ -52,11 +52,11 @@ export default function Post({ post }){
 
     <StyledPost>
         <h2>{post.title}</h2>
-        <Container>
+        <div>
             <h3>{post.category}</h3>
             <p>{post.date}</p>
             <p>{post.description}</p>
-        </Container>
+        </div>
     </StyledPost>
     </>
 );
