@@ -163,14 +163,14 @@ min-height: 100vh;
 h1 {
   font-size: 18px;
   padding-top: 10rem;
-  margin-left: 5rem;
+  margin-left: 2rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
 }
 
 h2 {
   font-size: 35px;
-  margin-left: 5rem;
+  margin-left: 2rem;
   padding-top: 0.5rem;
   font-weight: 600;
   font-size: 2.5rem;

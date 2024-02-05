@@ -99,6 +99,7 @@ h2 {
 .imagem{
     text-align: center;
     padding-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 768px){

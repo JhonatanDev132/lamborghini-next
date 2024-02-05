@@ -128,6 +128,7 @@ const StyledNews_1=styled.section`
       padding-left: 2rem;
       padding-top: 5rem;
       padding-right: 2rem;
+      padding-bottom: 2rem;
     }
 
     img {
