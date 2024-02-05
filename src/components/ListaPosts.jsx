@@ -1,30 +1,27 @@
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ListaPosts({ posts }) {
   if (posts.length === 0) return <h3 style={{ textAlign: "center" }}>Não temos notícias</h3>;
 
   return (
     <StyledListaPosts>
-      {posts.map((post, index) => {
-        const isImageOnLeft = index % 2 === 0; // Alterna entre esquerda e direita
+      {posts.map((post) => {
+      
 
         return (
-          <article key={post.id} className={isImageOnLeft ? "left" : "right"}>
+          <article key={post.id}>
             <div className="column">
               <h4>{post.title}</h4>
               <p className="categoria">{post.category}</p>
               <p className="data">{post.date}</p>
-              <p>{post.description}</p>
             </div>
-            <div className="imagem-centralizada">
-            <Image
-              src={post.image}
-              width={400}
-              height={300}
-              alt={`image of ${post.image}`}
-            />
-            </div>
+
+            <Link href={`/post/${post.id}`}>
+              Read more
+            </Link>
+            
           </article>
         );
       })}
@@ -33,8 +30,28 @@ export default function ListaPosts({ posts }) {
 }
 
 const StyledListaPosts = styled.div`
+    article{
+      border: 5px solid black;
+      margin: 2rem;
+      padding-bottom: 2rem;
+    }
+
     article:hover {
       cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+      margin: 2rem;
+      border: 2px solid black;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    a:hover{
+      background-color: #2b2b2b;
+      color: white;
     }
 
     h4 {
@@ -93,6 +110,10 @@ const StyledListaPosts = styled.div`
       height: 300px;
     }
 
+    a {
+      padding: 1rem;
+    }
+
 
   }
 
@@ -102,7 +123,7 @@ const StyledListaPosts = styled.div`
     }
 
     article {
-    display: flex;
+
     padding-bottom: 3rem;
   }
 
@@ -110,14 +131,5 @@ const StyledListaPosts = styled.div`
     padding: 3rem 0 0 0;
   }
 
-    article.left {
-    flex-direction: row;
-    padding-right: 2rem;
-  }
-
-    article.right {
-    flex-direction: row-reverse;
-    padding-left: 2rem;
-  }
   }
 `;

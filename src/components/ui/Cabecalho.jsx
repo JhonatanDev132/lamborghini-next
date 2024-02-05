@@ -41,7 +41,8 @@ const StyledHeader = styled.header`
     img {
         color: transparent;
         height: fit-content;
-        height: 45px;
+        height: auto;
+        width: auto;
         vertical-align: middle;
     }
 }
