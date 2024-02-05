@@ -63,7 +63,7 @@ export default function Models() {
 
           <div className="lado">
           <Image
-          src="/image/huracán_logo.webp"
+          src="/image/Huracán_logo.webp"
           width={320}
           height={20}
           alt="Logo da Huracán"
