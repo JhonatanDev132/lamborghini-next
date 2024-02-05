@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function ListaPosts({ posts }) {
   if (posts.length === 0) return <h3 style={{ textAlign: "center" }}>Não temos notícias</h3>;
@@ -12,7 +11,6 @@ export default function ListaPosts({ posts }) {
 
         return (
           <article key={post.id} className={isImageOnLeft ? "left" : "right"}>
-            <Link href={`/posts/${post.id}`}>
             <div className="column">
               <h4>{post.title}</h4>
               <p className="categoria">{post.category}</p>
@@ -27,7 +25,6 @@ export default function ListaPosts({ posts }) {
               alt={`image of ${post.image}`}
             />
             </div>
-            </Link>
           </article>
         );
       })}
