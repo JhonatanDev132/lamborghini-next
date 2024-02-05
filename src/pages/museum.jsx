@@ -156,7 +156,7 @@ const StyledNews_1=styled.section`
     @media screen and (min-width: 768px) {
 
       .imagem {
-      padding-top: 20rem;
+      padding-top: 10rem;
     }
 
 
