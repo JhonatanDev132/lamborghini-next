@@ -256,8 +256,8 @@ padding-right: 2rem;
     }
 
     @media screen and (min-width: 768px) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 7rem;
+      padding-right: 7rem;
       margin-bottom: 1rem;
 
 
@@ -330,8 +330,8 @@ const StyledHuracan = styled.section`
     @media screen and (min-width: 768px) {
 
       margin-bottom: 1rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 7rem;
+      padding-right: 7rem;
 
 
     .flex {
@@ -405,8 +405,8 @@ const StyledUrus = styled.section`
     }
 
     @media screen and (min-width: 768px) {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
 
 
     .flex {
