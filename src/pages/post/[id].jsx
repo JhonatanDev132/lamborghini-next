@@ -113,13 +113,26 @@ h2 {
     .texto {
         font-size: 1.3rem;
         padding-left: 2rem;
+        text-align: left;
+        padding-top: 5rem;
+    }
+
+    img {
+      width: 600px;
+      height: 400px;
     }
 
     .imagem {
-        text-align: left;
+        text-align: center;
         padding-left: 2rem;
+
     }
 
+    .flex {
+      display: flex;
+      padding-right: 10rem;
+      padding-left: 7rem;
+    }
     
 }
 
