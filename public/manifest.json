@@ -6,7 +6,8 @@
       {
         "src": "image/lamborghini.png",
         "type": "image/png",
-        "sizes": "256x256"
+        "sizes": "256x256",
+        "background_color": "#2b2b2b"
       }
     ],
     "start_url": "/",
