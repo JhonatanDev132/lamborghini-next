@@ -1,4 +1,4 @@
 // server.js
-const serverApi = `https://lamborghininext-default-rtdb.firebaseio.com/`;
+const serverApi = `https://lamborguini-next-default-rtdb.firebaseio.com/`;
 
 export default serverApi;
